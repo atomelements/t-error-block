@@ -1,6 +1,5 @@
 <link rel="import" href="../polymer/polymer.html">
 <link rel="import" href="../iron-icons/iron-icons.html">
-<!--<link rel="import" href="../iron-flex-layout/classes/iron-flex-layout.html"> -->
 
 <dom-module id="t-error-block">
     <template>
@@ -47,7 +46,6 @@
             <h2>
                 <iron-icon id="error" icon="error"></iron-icon>
                 <span>{{type}}</span>
-
             </h2> 
             <h4>{{errorMessage}}</h4>
         </div>
@@ -63,7 +61,6 @@
         is: 't-error-block',
 
         properties: {
-
             active: {
                 type: Boolean,
                 reflectToAttribute: true,
@@ -75,32 +72,16 @@
                 reflectToAttribute: true,
                 value: '400'
             },
+
             backHref: {
                 type: String,
-                reflectToAttribute: true,
                 value: '#'
             }, 
+            
             errorMessage: {
                 type: String,
-                reflectToAttribute: true,
                 value: 'Internal Server Error'
             }
-            /*,
-            data: {
-                type: Array,
-                value: function() {
-                    return [];
-                },
-                notify: true,
-                reflectToAttribute: true,
-                observer:'_checkdata'
-            },
-            onlyHead:{
-                type:Boolean,
-                value:false,
-                notify: true
-            }*/
         }
-
     });
 </script>

@@ -1,27 +1,27 @@
 {
-    "name": "App header",
+    "name": "Error Block",
     "properties": [{
         "name": "Properties",
             "fields": {
-            "email": {
-                "name":"Email",
-                "type": "string",
-                "value": "support@travelnxt.com"
+            "active": {
+                "name":"Show Error",
+                "type": "boolean",
+                "value": true
             },
-            "phone": {
-                "name":"Phone no.",
+            "type": {
+                "name":"Error Heading",
                 "type": "string",
-                "value": " 1-855-282-6507"
+                "value": "Error"
             },
-            "src": {
-                "name":"Image Source",
+            "backHref": {
+                "name":"Redirection URL",
                 "type": "string",
-                "value": "http://lorempixel.com/180/46"
+                "value": "./"
             },
-            "logoUrl": {
-                "name":"Logo url",
+            "errorMessage": {
+                "name":"Error Message",
                 "type": "string",
-                "value": "http://lorempixel.com/180/46"
+                "value": "Your booking failed."
             }
         }
     }]
